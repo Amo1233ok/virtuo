@@ -1,0 +1,274 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- information personnelles -->
+    <meta name="auteur" content="Amonon PEROU">
+    <meta name="email" content="amononperou@gmail.com">
+    <meta name="telephone" content="(+241) 62052806">
+    <meta name="description" content="Ce site est dedie a presenter l'ensemble de mes activites socio-profesionnelles  en tant que ingenieur logiciel et passionne d'informatique">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.svg' %}">
+    <title>mon portofolio</title>
+    <!-- Bootstrap min css -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+     <!-- block css suplemantary -->
+    {% block style %}{% endblock %}
+</head>
+
+<body class="tmp-white-version">
+    <!-- tpm-header-area start -->
+    <header class="tmp-header-area-start header-one header--sticky header--transparent">
+        <!-- header mid area start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="logo-dark" src="{% static 'assets/images/logo/dark-logo-virtuo.png" alt="">
+                                <img class="logo-white" src="{% static 'assets/images/logo/dark-logo-virtuo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="tmp-mainmenu-nav d-none d-xl-block">
+                            <nav class="navbar-example2 onepagenav">
+                                <ul class="tmp-mainmenu nav nav-pills">
+                                    <li class="current"><a class="smoth-animation" href="#home">Accueil</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#service">Services</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#about">A propos</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#resume">Information</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#portfolio">Portfolio</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#pricing">Mes honoraires</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#contacts">Contact</a></li>
+                                    <li class="nav-item"><a class="smoth-animation" href="#blog">Blog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="tmp-header-right">
+                            <div class="social-share-wrapper d-none d-md-block">
+                                <div class="social-link">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="tmp-side-collups-area d-block d-xl-none">
+                                <button class="hamberger-menu humberger_menu_active"><i id="menuBtn" class="fa-light fa-bars humberger-menu"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header mid area end -->
+    </header>
+
+        <!-- Start Popup Mobile Menu  -->
+    <div class="d-block d-xl-none">
+        <div class="tmp-popup-mobile-menu">
+            <div class="inner">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="" class="logo-area">
+                            <img class="logo-dark" src="{% static 'assets/images/logo/dark-logo-virtuo.png" alt="">
+                            <img class="logo-white" src="{% static 'assets/images/logo/dark-logo-virtuo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="close-menu">
+                        <button class="close-button tmp-round-action-btn">
+                            <i class="fa-sharp fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="tmp-mainmenu onepagenav-click">
+                    <li><a class="smoth-animation" href="#home">Accueil</a></li>
+                    <li><a class="smoth-animation" href="#service">Services</a></li>
+                    <li><a href="#about">A propos de Moi </a></li>
+                    <li><a class="smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li><a class="smoth-animation" href="#resume">Mon parcours</a></li>
+                    <li><a class="smoth-animation" href="#pricing">mes honoraires</a></li>
+                    <li><a class="smoth-animation" href="#blog">Blog</a></li>
+                    <li><a class="smoth-animation" href="#contacts">Contact</a></li>
+                </ul>
+
+                <!-- social sharea area -->
+                <div class="social-wrapper mt--40">
+                    <span class="subtitle">Ressaux sociaux</span>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- end -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+    {% block body %}{% endblock %}
+
+    <!-- Start Footer Area  -->
+    <div class="footer-stars-animation-wrapper-footer">
+        <!-- Start Footer Area  -->
+        <footer class="footer-area footer-style-one-wrapper bg-color-footer bg_images tmp-section-gap">
+            <div class="separator-animated-border border-top-footer animated-true"></div>
+            <div class="separator-animated-border animated-true"></div>
+            <div class="container">
+                <div class="footer-main footer-style-one">
+                    <div class="row g-5">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="single-footer-wrapper border-right mr--20">
+                                <div class="logo">
+                                    <a href="">
+                                        <img src="{% static 'assets/images/logo/dark-logo-virtuo.png' %}" alt="Virtuo - Personal Portfolio HTML Template for developers and freelancers">
+                                    </a>
+                                </div>
+                                <p class="description"><span>Rejoignez-moi</span><br> Ma communaute</p>
+                                <form action="#" class="newsletter-form-1 mt--40">
+                                    <input type="email" placeholder="Email Adress">
+                                    <span class="form-icon"><i class="fa-regular fa-envelope"></i></span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-wrapper quick-link-wrap">
+                                <h5 class="ft-title">liens rapide</h5>
+                                <ul class="ft-link tmp-link-animation">
+                                    <li>
+                                        <a href="#">A propos de Moi </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">horonaires</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-footer-wrapper contact-wrap">
+                                <h5 class="ft-title">Contact </h5>
+                                <ul class="ft-link tmp-link-animation">
+                                    <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">amononperou@gmail.com</a></li>
+                                    <li><span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>okala, Lbreville Gabon</li>
+                                    <li><span class="ft-icon"><i class="fa-solid fa-phone"></i></span><a href="#">(+241) 62052806</a></li>
+                                </ul>
+                                <div class="social-link footer">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-area-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-17">
+                        <div class="main-wrapper">
+                            <p class="copy-right-para tmp-link-animation"> ©<a href="" target="_blank">InversWeb </a>
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> | Tous Droit Reserves
+                            </p>
+                            <ul class="tmp-link-animation">
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Confidentialite</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Area  -->
+        <div class="slider-bg-light">
+            <img class="blocksync-scroll-trigger fade_in animation-order-8" src="{% static 'assets/images/banner/shape/light.svg' %}" alt="Top Light Shape">
+        </div>
+        <div class="slider-bg-dot-shape">
+            <div class="wrapper blocksync-scroll-trigger blocksync-stars-area fade_in animation-order-16">
+                <div class="blocksync-stars"></div>
+                <div class="blocksync-stars2"></div>
+                <div class="blocksync-stars3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'assets/js/vendor/modernizer.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/waypoints.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/plugins/odometer.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/appear.js' %}"></script>
+
+
+    <script src="{% static 'assets/js/vendor/jquery-one-page-nav.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/tilt.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/swiper.js' %}"></script>
+
+    <script src="{% static 'assets/js/plugins/gsap.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/splittext.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrolltigger.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrolltoplugins.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/smoothscroll.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/twinmax.js' %}"></script>
+
+
+
+    <!-- bootstrap Js-->
+    <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/waw.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/intro-video.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/isotop.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/animation.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/contact.form.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/backtop.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/text-type.js' %}"></script>
+
+
+
+    <!-- custom Js -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+     <!-- block css suplemantary -->
+    {% block javascript %}{% endblock %}
+
+
+</body>
+
+
+
+
+<!-- Mirrored from inversweb.com/product/html/virtuo/index-02-white.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 11:03:59 GMT -->
+</html>
