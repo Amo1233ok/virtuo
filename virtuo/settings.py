@@ -30,14 +30,14 @@ DEBUG = env.bool("DJANGO_DEBUG", default=True)
 
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["*"])
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST =env("EMAIL_HOST")
-EMAIL_PORT =env("EMAIL_PORT")
-EMAIL_USE_TLS =env("EMAIL_USE_TLS")
-EMAIL_USE_SSL =env("EMAIL_USE_SSL")
-EMAIL_HOST_USER = env("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD =env("EMAIL_HOST_PASSWORD")
-DEFAULT_FROM_EMAIL ='amononperou@gmail.com'
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST=env("EMAIL_HOST")
+EMAIL_PORT=env("EMAIL_PORT")
+EMAIL_USE_TLS=True
+EMAIL_USE_SSL=False
+EMAIL_HOST_USER=env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD=env("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL='amononperou@gmail.com'
 # Application definition
 
 INSTALLED_APPS = [
